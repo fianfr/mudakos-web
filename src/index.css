@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-sage-50: #f2f7f4;
+  --color-sage-100: #e2ede5;
+  --color-sage-200: #c2dacb;
+  --color-sage-300: #1e5c3f; /* Deep Forest Green */
+  --color-sage-400: #144930;
+  --color-sage-500: #0f3a25;
+  --color-sage-600: #0a2d1d;
+  --color-sage-700: #072115;
+  --color-sage-800: #04140d;
+  --color-sage-900: #020a06;
+
+  --color-forest-50: #f2f7f4;
+  --color-forest-100: #e2ede5;
+  --color-forest-200: #c2dacb;
+  --color-forest-300: #1e5c3f; /* Deep Forest Green */
+  --color-forest-400: #144930;
+  --color-forest-500: #0f3a25;
+  --color-forest-600: #0a2d1d;
+  --color-forest-700: #072115;
+  --color-forest-800: #04140d;
+  --color-forest-900: #020a06;
+
+  --color-soft-50: #fbfcfd;
+  --color-soft-100: #ebf0f4; /* The requested Soft Gray color */
+  --color-soft-200: #dae2e7;
+  --color-soft-300: #c1ced6;
+  --color-soft-400: #a1b2bd;
+  --color-soft-500: #8195a1;
+  --color-soft-600: #627682;
+  --color-soft-700: #4d5d67;
+  --color-soft-850: #333e45;
+  --color-soft-900: #22292f;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-soft-100);
+  color: var(--color-soft-900);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MudaKost",
+  "description": "A professional property management and room rental dashboard specializing in finance control, tenant management, automated reminders, maintenance complaints, receipt generation, and AI-powered renovation and marketing recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
