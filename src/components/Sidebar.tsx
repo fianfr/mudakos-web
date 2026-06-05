@@ -8,7 +8,8 @@ import {
   Clock, 
   ShieldCheck, 
   Building,
-  Wrench
+  Wrench,
+  FileSpreadsheet
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -26,6 +27,7 @@ export default function Sidebar({ currentTab, setCurrentTab, trialDays, onResetT
     { id: 'receipts', label: 'Payment Receipts', icon: ReceiptText },
     { id: 'complaints', label: 'Complaints / Repair', icon: Wrench },
     { id: 'ai', label: 'AI recommendations', icon: Sparkles },
+    { id: 'sheets', label: 'Google Sheets Export', icon: FileSpreadsheet },
   ];
 
   const trialProgressPercentage = Math.max(0, Math.min(100, (trialDays / 30) * 100));

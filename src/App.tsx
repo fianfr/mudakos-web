@@ -23,6 +23,7 @@ import UserManagement from './components/UserManagement';
 import PaymentReceiptCreator from './components/PaymentReceiptCreator';
 import AiConsultant from './components/AiConsultant';
 import ComplaintsControl from './components/ComplaintsControl';
+import SheetsControl from './components/SheetsControl';
 
 import {
   INITIAL_PROPERTIES,
@@ -715,6 +716,26 @@ export default function App() {
               transition={{ duration: 0.25 }}
             >
               <AiConsultant rooms={filteredRooms} complaints={filteredComplaints} properties={properties} selectedPropertyId={selectedPropertyId} />
+            </motion.div>
+          )}
+
+          {/* GOOGLE SHEETS EXPORT CONTROL MODULE */}
+          {currentTab === 'sheets' && (
+            <motion.div
+              key="sheets-export-tab"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.25 }}
+            >
+              <SheetsControl
+                properties={properties}
+                rooms={filteredRooms}
+                tenants={filteredTenants}
+                transactions={filteredTransactions}
+                complaints={filteredComplaints}
+                receipts={filteredReceipts}
+              />
             </motion.div>
           )}
         </AnimatePresence>
